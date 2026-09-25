@@ -12,3 +12,4 @@ cliente.endereco; ={
     complemento: "ap 934",
 };
 
+console.log(cliente.endereco);
