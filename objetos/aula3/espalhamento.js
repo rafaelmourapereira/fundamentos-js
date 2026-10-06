@@ -5,7 +5,7 @@ const cliente = {
     telefone: ["3326500914", "33589011453"],
 };
 
-cliente.endereco; [
+cliente.endereco = [
 {
     rua: "R. Dr Orlando Araujo Costa",
     numero: 1931,
@@ -14,9 +14,16 @@ cliente.endereco; [
 },
 ];
 
-function LigaParaCliente(telefoneComercial, telefoneResidencial){
+function ligaParaCliente(telefoneComercial, telefoneResidencial){
     console.log('Ligado para ${telefoneComercial}');
     console.log('${telefoneResidencial}');
 }
 
-LigaParaCliente(cliente.telefone[0], cliente.telefone[1]);
+ligaParaCliente(...cliente.telefone);
+
+const encomenda = {
+    destinatario: cliente.nome,
+    rua : cliente.endereco[0].rua,
+    numero: cliente.endereco[1].numero,
+};
+console.log(encomenda);
