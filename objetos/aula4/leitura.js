@@ -1,13 +1,9 @@
 const dados = require("./clinte.json");
-console.log(dados);{
-    "nome": "Rafael",
-    "email": "rafamoura@gmail.com"
-    "telefone": ["2235966", "33248761"],
-    "endereco": {
-        "rua": "R. Guaracar",
-        "numero": 404,
-        "apartamento": true,
-        "complemento": "casa"
-    }
-}
 
+console.log(dados);
+console.log(typeof dados)
+
+const clienteEmString = JSON.stringify(dados);
+console.log(clienteEmString);
+
+console.log(clienteEmString.nome);
