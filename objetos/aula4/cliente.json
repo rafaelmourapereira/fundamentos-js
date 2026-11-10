@@ -1,6 +1,6 @@
 {
     "nome": "Rafael",
-    "email": "rafamoura@gmail.com"
+    "email": "rafamoura@gmail.com",
     "telefone": ["2235966", "33248761"],
     "endereco": {
         "rua": "R. Guaracar",
